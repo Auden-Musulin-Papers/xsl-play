@@ -6,7 +6,8 @@
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title type="main">Title</title>
+            <title type="sub">subtitle</title>
          </titleStmt>
          <publicationStmt>
             <p>Publication Information</p>
@@ -22,7 +23,7 @@
             <p>
                <lb/>Paragraph 3 first <gap reason="illegible"/>
                <lb/>Paragraph 3 second <gap reason="deleted"/>
-               <lb/>Paragraph 3 third line <gap>asfasf</gap>
+               <lb/>Paragraph 3 third line <gap/>
             </p>
          </div>
       </body>

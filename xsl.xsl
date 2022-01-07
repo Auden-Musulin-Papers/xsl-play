@@ -55,8 +55,26 @@
                     [<xsl:apply-templates/>]
                 </xsl:otherwise>
             </xsl:choose>
-            
         </del> 
-    </xsl:template>  
+    </xsl:template>
+    <xsl:template match="tei:gap">
+        <del>
+            <xsl:choose>
+                <xsl:when test="@reason='illegible'">
+                    <abbr title="unleserlich">
+                        [<xsl:apply-templates/>]
+                    </abbr>
+                </xsl:when>
+                <xsl:when test="@reason='deleted'">
+                    <abbr title="gelöscht">
+                        [<xsl:apply-templates/>]
+                    </abbr>
+                </xsl:when>
+                <xsl:otherwise>
+                    [<xsl:apply-templates/>]
+                </xsl:otherwise>
+            </xsl:choose>
+        </del> 
+    </xsl:template>
 
 </xsl:stylesheet>

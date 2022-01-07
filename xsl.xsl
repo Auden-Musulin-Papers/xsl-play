@@ -42,7 +42,7 @@
     <xsl:template match="tei:lb">
         <br/>
     </xsl:template>
-    <xsl:template match="tei:gap">
+    <!--<xsl:template match="tei:gap">
         <del>
             <xsl:choose>
                 <xsl:when test="@reason">
@@ -56,7 +56,7 @@
                 </xsl:otherwise>
             </xsl:choose>
         </del> 
-    </xsl:template>
+    </xsl:template>-->
     <xsl:template match="tei:gap">
         <del>
             <xsl:choose>
